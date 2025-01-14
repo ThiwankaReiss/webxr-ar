@@ -1,12 +1,14 @@
-
+import {Route, Routes} from "react-router-dom"
 import './App.css'
+import CubeContainer from "./componenets/cube/CubeContainer"
 
 function App() {
  
   return (
-    <>
-      hello
-    </>
+    <Routes>
+      <Route path="/" element={<CubeContainer/>}/>
+        
+    </Routes>
   )
 }
 
