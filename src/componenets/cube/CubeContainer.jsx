@@ -1,15 +1,15 @@
 import React from 'react'
-import {OrbitControls} from "@react-three/drei"
+
 import {Canvas} from "@react-three/fiber"
+import Cube from './Cube'
+
 const CubeContainer = () => {
+    
+
+
   return (
     <Canvas>
-        <OrbitControls/>
-        <ambientLight/>
-        <mesh>
-            <boxGeometry/>
-            <meshStandardMaterial color={"mediumpurple"}/>
-        </mesh>
+        <Cube></Cube>
     </Canvas>
   )
 }
