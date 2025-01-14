@@ -14,7 +14,7 @@ const Cube = () => {
             <OrbitControls />
             <ambientLight />
             <mesh ref={cubeRef}>
-                <boxGeometry />
+                <boxGeometry args={[2,2,2]} />
                 <meshStandardMaterial color={"mediumpurple"} />
             </mesh>
         </>
