@@ -9,7 +9,11 @@ const XrCubeContainer = () => {
     const store = createXRStore()
     return (
         <>
-            <button onClick={() => store.enterAR()}>Enter AR</button>
+            <button onClick={() =>
+                store.enterAR().catch(error => alert(`Error entering AR: ${error.message}`))
+            }>
+                Enter AR
+            </button>
             <Canvas>
                 <XR store={store}>
                     <XrCube />
