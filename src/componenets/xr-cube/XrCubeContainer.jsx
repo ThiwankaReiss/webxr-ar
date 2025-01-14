@@ -1,13 +1,17 @@
 import { Canvas } from "@react-three/fiber";
-import { ARButton, XR } from "@react-three/xr";
+import { XR, createXRStore } from '@react-three/xr'
 import XrCube from "./XrCube";
 
+const store = createXRStore()
 const XrCubeContainer = () => {
+
+    // const store = createXRStore()
+
     return (
         <>
-            <ARButton />
+            <button onClick={() => store.enterAR()}>Enter AR</button>
             <Canvas>
-                <XR>
+                <XR store={store}>
                     <XrCube />
                 </XR>
             </Canvas>
