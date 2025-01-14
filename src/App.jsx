@@ -6,7 +6,7 @@ function App() {
  
   return (
     <Routes>
-      <Route path="/" element={<CubeContainer/>}/>
+      <Route path="/webxr-ar" element={<CubeContainer/>}/>
         
     </Routes>
   )
